@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save the Bees 🐝</title>
+    <style>
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgb(177, 173, 219) 11.2%,
+          rgb(245, 226, 226) 91.1%
+        );
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin: 60px auto;
+        width: 60%;
+      }
+      h1 {
+        text-align: center;
+        color: #272044;
+        font-size: 45px;
+        padding: 0;
+        padding-bottom: 0;
+        margin: 8px 10px 5px;
+      }
+      h2 {
+        text-align: center;
+        color: #5c49af;
+        font-size: 20px;
+        padding: 0 0 5px;
+        font-weight: 550;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 12px;
+        padding: 12px 10px 30px 10px;
+        max-width: 90%;
+      }
+      p {
+        text-align: center;
+        line-height: 2;
+        font-size: 16px;
+        margin: 20px 0 10px;
+        color: #272044;
+      }
+      button {
+        display: block;
+        margin: 25px auto;
+        background: #5c49af;
+        font-size: 17px;
+        color: white;
+        border: none;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      button:hover {
+        opacity: 0.88;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 550px;
+        margin: 0 auto;
+        padding: 20px 50px;
+        background-color: whitesmoke;
+        border-radius: 40px;
+      }
+      .learn-more {
+        text-align: center;
+        font-size: 22px;
+        margin: 0 auto;
+        display: block;
+        font-size: 25px;
+      }
+      .footer {
+        text-align: center;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🐝 Save the Bees 🐝</h1>
+      <h2>Mighty Little Pollinators</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/027/249/original/bees.jpeg?1644898611"
+        alt="Bee pollinating flower"
+        width="500"
+      />
+      <hr />
+      <p>
+        "Away in the meadow, amid the red clover, the funniest music goes over
+        and over: The honey-bee singing his song to the clover. The words, they
+        are set to a rhythmical tune, a rumble, and bumble and zoon! Zoon! Zoon!
+        Zoon! Goes the honey-bee, over and over, humming his tune to the
+        blossoming clover."
+        <br />
+        <strong>🌼 Gertrude E. Heath 🌼</strong>
+        <br />
+      </p>
+      <hr />
+      <button class="support-button">Support the Bees</button>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/027/250/original/honey-bee-on-flower.jpeg?1644899720"
+        alt="Bee on flower"
+        width="300"
+      />
+      <a
+        href="https://thebeeconservancy.org/10-ways-to-save-the-bees/"
+        target="_blank"
+        class="learn-more"
+      >
+        <em> Learn about ways to save the bees</em>
+      </a>
+      <br />
+      <hr />
+      <span class="footer">Created by Maria Isabel Vanegas 👩🏽‍💻</span>
+    </div>
+    <script>
+      function support() {
+        let name = prompt("What is your name?");
+        let flower = prompt("What is your favorite flower?");
+
+        if (flower === "rose") {
+          alert(
+            "Thank you, " +
+              name +
+              " for your interest in our mighty pollinators. It's another great day to save the bees! 🌹 🐝 🌹"
+          );
+        } else {
+          alert(
+            "Thank you, " +
+              name +
+              " for your interest in our mighty pollinators. It's another great day to save the bees! 🌸 🐝 🌸"
+          );
+        }
+      }
+      let supportButton = document.querySelector(".support-button");
+      supportButton.addEventListener("click", support);
+    </script>
+  </body>
+</html>
